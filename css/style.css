@@ -1,0 +1,45 @@
+ 
+body{
+  background-color:darkslategray
+}
+h1{
+  font-family: "Pacifico", cursive;
+  font-size: 50px;
+  font-family: "Pacifico", cursive;
+  color: aqua;
+  
+  }
+  h1::before{
+  content: "";
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left: 0;
+    bottom: 10px;
+    background-color:red;
+    transition: height 350ms;
+    z-index: -1;
+  }
+   h1:hover::before {
+    height: 50%;}
+
+  
+ 
+  .fa-bookmark::before {
+      content: "\f02e";}
+      
+h2{
+  font-size: 25px;
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+  -webkit-background-clip: text;
+    background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fa-book-bookmark::before {
+  content: "\e0bb";}
+  
+.bookmark{
+  background:
+}

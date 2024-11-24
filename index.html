@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bookmarker</title>
+    <!-- #Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ^Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- !CSS Style -->
+     <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <div class="interface py-5 " >
+    <div class="container d-flex flex-column justify-content-center align-items-center mx-4">
+      <h1 class="py-2 position-relative">
+        Bookmarker
+      </h1>
+    
+    
+    <div class=" bookmark p-3 py-3 mt-5 d-flex flex-column justify-content-center align-items-center gap-4" ></div>
+    <h2 class="text-center text-white  fw-medium  ">
+      <i class="fa-solid fa-bookmark"></i>
+      Bookmark your favorite sites
+      <i class="fa-solid fa-bookmark"></i>
+    </h2>
+    <!-- #<form> -->
+
+    <div class=" bookmark  w-75 mx-auto mt-4 p-3   border border-info-subtle rounded-4 p-4 shadow rounded ">
+     
+      <div  container class="site-name w-100 d-flex flex-column justify-content-center py-4">
+          <lable  class="pd-2 fw-semibold fw-bolder text-body-emphasis" for="siteName" >
+          <i class="fa-solid fa-book-bookmark pe-2"></i> Site Name </lable>
+
+        <input id="siteName" class="form-control" type="text" placeholder="bookmarkName">
+      </div>
+      <div class="site-name w-100 d-flex flex-column justify-content-center py-2">
+        <lable class="pd-2 fw-semibold text-body-emphasis " for="siteURL"   >
+        <i class="fa-solid fa-book-bookmark pe-2"> </i>  Site URL </lable>
+      <input id="siteURL" class="form-control" type="text" placeholder="WebSite URL">
+    </div> 
+     <button onclick="addSite();" class="    btn-danger btn px-5 rounded-pill">Submit</button>
+      
+    </div>
+
+    <table class="table w-75 mx-auto mt-5">
+      <thead class="rounded-pill">
+        <th>Index</th>
+        <th>Website Name</th>
+        <th>Visit</th>
+        <th>Delete</th>
+      </thead>
+
+      <tbody id="tBody"></tbody>
+    </table>
+
+    <!-- #</form> -->
+
+    <!-- ~<js bootstrap> -->
+    </div
+  
+    </div>
+    <script src="./js/index.js"></script>
+
+    
+  </body>
+</html>
