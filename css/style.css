@@ -1,6 +1,6 @@
  
 body{
-  background-color:darkslategray
+  background-color:gray
 }
 h1{
   font-family: "Pacifico", cursive;
@@ -32,14 +32,8 @@ h2{
   font-size: 25px;
   font-family: "Righteous", sans-serif;
   font-weight: 400;
-  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
-  -webkit-background-clip: text;
-    background-clip: text;
-  -webkit-text-fill-color: transparent;
+ 
 }
 .fa-book-bookmark::before {
   content: "\e0bb";}
   
-.bookmark{
-  background:
-}
